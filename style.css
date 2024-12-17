@@ -31,7 +31,6 @@ body{
     font-size: 18px;
 }
 
-
 .content{
     flex: 1;
     .body1{
@@ -39,21 +38,28 @@ body{
         display: flex;
         justify-content: space-between;
         padding: 150px;
+        gap: 50px;
 
         .body1Left{
-            margin-left: 11%;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-left: 9%;
+            width: auto;
             .button1{
+                display: flex;
+                flex-direction: column;
                 border: none;
                 border-radius: 8px;
                 background-color: #3882F6;
                 color: white;
                 width: auto;
                 max-width: max-content;
-                padding: 10px 20px;
+                padding: 10px 40px;
             }
         }
         .body1Right{
-            margin-right: 11%;
+            margin-right: 9%;
         }
     }
     .body2{
@@ -67,6 +73,74 @@ body{
         }
         .boxes{
             display: flex;
+            justify-content: center;
+            gap: 100px;
+            padding-bottom: 100px;
+            .icon1, .icon2, .icon3, .icon4{
+                width: 150px;
+                flex-direction: column;
+                display: flex;
+                gap: 8px;
+                justify-content: center;
+            }
+            img{
+                width: 150px;
+                height: 135px;
+            }
+            .bottomText{
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+    }
+    .body3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 100px;
+        background-color: #E5E7EB;
+        .quote{
+            width: 800px;
+            font-size: 36px;
+            font-style: italic;
+            font-family: light;
+        }
+        .quote2{
+            margin-left: 47%;
+            text-align: right;
+            font-weight: bold;
+        }
+    }
+    .body4{
+        display: flex;
+        justify-content: space-between;
+        background-color: #3882F6;
+        margin: 100px;
+        padding: 50px;
+        border-radius: 8px;
+        .lines{
+            display: flex;
+            flex-direction: column;
+            margin-left: 80px;
+            .line1{
+                font-weight: bold;
+                color: white;
+            }
+            .line2{
+                font-size: 15px;
+                color: white;
+            }
+        }
+        .button2{
+            border: 3px white;
+            color: black;
+            background-color: white;
+            border-radius: 8px;   
+            width: auto;
+            max-width: max-content;
+            padding: 10px 40px;
+            margin-right: 80px;
         }
     }
 }
@@ -86,18 +160,10 @@ body{
     color: #E5E7EB;
 }
 
-
-.body1Left{
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    gap: 13px;
-}
-
 .footer{
     color: white;
     justify-content: center;
-    padding: 22px;
+    padding: 30px;
     font-size: 18px
 }
 
